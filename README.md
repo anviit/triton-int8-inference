@@ -55,3 +55,16 @@ and batch size on 6 GB GPUs.
 This engine demonstrates how targeted kernel-level optimizations
 can significantly improve LLM inference under real hardware constraints,
 without retraining or model changes.
+
+
+
+## Model-Level Validation
+
+This inference engine is validated on a real transformer model.
+
+▶️ **GPT-2 Triton Inference Demo**  
+https://github.com/dunkinflicka/triton_gpt2
+
+The demo integrates the Triton causal attention kernel from this repository
+into a GPT-2 implementation (nanoGPT) and benchmarks end-to-end
+autoregressive inference throughput and memory usage.
