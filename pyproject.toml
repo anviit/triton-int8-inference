@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kernel-triton"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0",
+    "triton>=2.0",
+    "nvtx",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["kernels*", "models*"]

@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Triton JIT cache
+~/.triton/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Profiler outputs (large, regenerate locally)
+profiler/mini_block_trace.json
+
+# Benchmark result JSONs (checked in selectively)
+# benchmarks/results/   ← comment this out if you want to track results
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
